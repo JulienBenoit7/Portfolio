@@ -1,5 +1,6 @@
 /* eslint-disable prettier/prettier */
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function ListProjet() {
   const [listProjet, setListProjet] = useState([]);
@@ -11,13 +12,18 @@ export default function ListProjet() {
       .then((data) => {
         setListProjet(data);
       });
+
+    fetch(
+      `${
+        import.meta.env.VITE_BACKEND_URL ?? `http://localhost:5000`
+      }/language/projet/1`
+    ).then((res) => res.json());
   }, []);
 
-  return (
-    <div>
-      {listProjet.map((projet) => (
-        <p key={projet.id}>{projet.name}</p>
-      ))}
-    </div>
-  );
+  return listProjet.map((projet) => (
+    <Link to={projet.url}>
+      <h2>{projet.name}</h2>
+      <p>{projet.description}</p>
+    </Link>
+  ));
 }

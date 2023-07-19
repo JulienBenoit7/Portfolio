@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
-
+import Home from "./pages/Home";
 import "./App.css";
 import ListProjet from "./components/ListProjet";
 import ListExperience from "./components/ListExperience";
@@ -10,9 +10,17 @@ function App() {
   return (
     <main>
       <Routes>
-        <Route path="/" element={<Navbar />} />
+        <Route path="/" element={<Home />} />
 
-        <Route path="/projet" element={<ListProjet />} />
+        <Route
+          path="/projet"
+          element={
+            <>
+              <Navbar />
+              <ListProjet />
+            </>
+          }
+        />
         <Route path="/ListExperience" element={<ListExperience />} />
         <Route path="/Skills" element={<Skills />} />
       </Routes>

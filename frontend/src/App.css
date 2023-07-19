@@ -15,8 +15,41 @@
   color: white;
   justify-content: space-around;
   align-items: center;
+  text-decoration: none;
+  list-style: none;
 }
 
 .listPointer {
   cursor: pointer;
+}
+
+.Skills {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Card {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  width: 150px;
+  height: 150px;
+}
+
+h2 {
+  color: white;
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 14px;
 }

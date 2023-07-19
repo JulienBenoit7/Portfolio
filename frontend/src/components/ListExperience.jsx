@@ -1,9 +1,11 @@
 /* eslint-disable prettier/prettier */
 import React from "react";
+import Navbar from "./Navbar";
 
 function ListExperience() {
   return (
     <>
+      <Navbar />
       <h2>Experience et formation</h2>
 
       <p>
