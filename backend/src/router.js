@@ -2,12 +2,24 @@ const express = require("express");
 
 const router = express.Router();
 
-const itemControllers = require("./controllers/itemControllers");
+const cors = require("cors");
 
-router.get("/items", itemControllers.browse);
-router.get("/items/:id", itemControllers.read);
-router.put("/items/:id", itemControllers.edit);
-router.post("/items", itemControllers.add);
-router.delete("/items/:id", itemControllers.destroy);
+router.use(
+  cors({
+    origin: process.env.FRONTEND_URL ?? "http://localhost:3000",
+    optionsSuccessStatus: 200,
+  })
+);
+
+const projetControllers = require("./controllers/projetControllers");
+
+const languageControllers = require("./controllers/languageControllers");
+
+router.get("/projets", projetControllers.browse);
+router.get("/projets/:id", projetControllers.read);
+
+router.get("/languages", languageControllers.browse);
+router.get("/languages/:id", languageControllers.read);
+router.get("/languages/projet/:id", languageControllers.readProjetTechno);
 
 module.exports = router;
