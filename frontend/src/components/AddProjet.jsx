@@ -99,7 +99,7 @@ function AddProjet() {
         type="button"
         onClick={handleAddProjet}
       >
-        Ajouter du projet
+        Ajout du projet
       </button>
 
       {message && <p className="add-projet-message">{message}</p>}

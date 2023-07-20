@@ -2,6 +2,43 @@
   margin: 0;
   padding: 0;
 }
+.projet-cartes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.projet-card {
+  flex: 0 1 calc(33% - 16px);
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #f9f9f9;
+  text-decoration: none;
+  color: #333;
+  transition: box-shadow 0.3s ease;
+}
+
+.projet-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projet-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.projet-card p {
+  font-size: 1rem;
+}
+
+.projetTitle {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
 
 .listSkills {
   display: flex;
@@ -165,8 +202,38 @@
   text-align: center;
 }
 
-/* Media queries for desktop */
 @media (min-width: 768px) {
+  .projet-cartes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .projet-card {
+    flex: 0 1 calc(33% - 16px);
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #f9f9f9;
+    text-decoration: none;
+    color: #333;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .projet-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .projet-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .projet-card p {
+    font-size: 1rem;
+  }
   .HomeLogo {
     max-width: 31.25rem;
     height: auto;

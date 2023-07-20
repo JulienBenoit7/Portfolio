@@ -24,7 +24,7 @@ function Navbar() {
           style={{ textDecoration: "none", color: "white" }}
           to="/AddProjet"
         >
-          <li className="listPointer">Ajouter projet</li>
+          <li className="listPointer">Administration</li>
         </Link>
       </ul>
     </nav>

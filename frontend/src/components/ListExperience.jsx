@@ -7,7 +7,7 @@ function ListExperience() {
     <>
       <Navbar />
       <div className="ListExperienceContainer">
-        <h2 className="ListExperienceTitle">Experience et formation</h2>
+        <h2 className="ListExperienceTitle">Experiences et formations</h2>
 
         <p className="ListExperienceContent">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, magnam!

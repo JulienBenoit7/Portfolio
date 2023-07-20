@@ -1,12 +1,14 @@
 const express = require("express");
 
 const router = express.Router();
-
 const cors = require("cors");
 
 router.use(
   cors({
-    origin: process.env.FRONTEND_URL ?? "http://localhost:3000",
+    origin: [
+      process.env.FRONTEND_URL ?? "http://localhost:3000",
+      "http://localhost:3001",
+    ],
     optionsSuccessStatus: 200,
   })
 );

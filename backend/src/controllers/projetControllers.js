@@ -29,4 +29,16 @@ const read = (req, res) => {
     });
 };
 
-module.exports = { browse, read };
+const add = (req, res) => {
+  const projet = req.body;
+  models.projet
+    .create(projet)
+    .then((result) => {
+      res.location(`/projets/${result.id}`).sendStatus(201);
+    })
+    .catch((err) => {
+      console.error(err);
+      res.sendStatus(500);
+    });
+};
+module.exports = { browse, read, add };
