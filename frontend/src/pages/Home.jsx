@@ -1,20 +1,32 @@
 /* eslint-disable prettier/prettier */
 import React from "react";
-import Navbar from "../components/Navbar";
+import { FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa";
 import Logo from "../image/logojb.png";
 
 function Home() {
   return (
-    <nav>
-      <Navbar />
-      <img src={Logo} alt="logo jb" />
-      <h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-        cupiditate iste illo laboriosam. Natus obcaecati cumque ducimus
-        dignissimos asperiores ipsa magni necessitatibus quas. Molestiae nemo
-        odio repellendus error possimus autem!
-      </h2>
-    </nav>
+    <div className="HomeContainer">
+      <div className="HomeContent">
+        <img className="HomeLogo" src={Logo} alt="logo jb" />
+        <h2 className="HomeText">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+          cupiditate iste illo laboriosam. Natus obcaecati cumque ducimus
+          dignissimos asperiores ipsa magni necessitatibus quas. Molestiae nemo
+          odio repellendus error possimus autem!
+        </h2>
+        <div className="SocialLinks">
+          <a href="/#" className="SocialLink">
+            <FaTwitter />
+          </a>
+          <a href="/#" className="SocialLink">
+            <FaFacebook />
+          </a>
+          <a href="/#" className="SocialLink">
+            <FaInstagram />
+          </a>
+        </div>
+      </div>
+    </div>
   );
 }
 

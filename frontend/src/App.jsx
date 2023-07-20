@@ -5,12 +5,21 @@ import "./App.css";
 import ListProjet from "./components/ListProjet";
 import ListExperience from "./components/ListExperience";
 import Skills from "./components/Skills";
+import AddProjet from "./components/AddProjet";
 
 function App() {
   return (
     <main>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route
+          path="/"
+          element={
+            <>
+              <Navbar />
+              <Home />
+            </>
+          }
+        />
 
         <Route
           path="/projet"
@@ -23,6 +32,15 @@ function App() {
         />
         <Route path="/ListExperience" element={<ListExperience />} />
         <Route path="/Skills" element={<Skills />} />
+        <Route
+          path="/AddProjet"
+          element={
+            <>
+              <Navbar />
+              <AddProjet />
+            </>
+          }
+        />
       </Routes>
     </main>
   );

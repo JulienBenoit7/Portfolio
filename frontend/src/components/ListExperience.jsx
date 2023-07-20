@@ -6,20 +6,22 @@ function ListExperience() {
   return (
     <>
       <Navbar />
-      <h2>Experience et formation</h2>
+      <div className="ListExperienceContainer">
+        <h2 className="ListExperienceTitle">Experience et formation</h2>
 
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, magnam!
-        Aliquam, est ipsam aut optio exercitationem magni perferendis voluptatem
-        saepe laborum, ducimus consequuntur dignissimos reprehenderit ipsum
-        dicta sed amet facere.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, quia
-        cumque commodi officia rem atque. Sint non dolor officia fugiat
-        consequatur perferendis, porro voluptate ducimus vero fugit et, nesciunt
-        dolorem?
-      </p>
+        <p className="ListExperienceContent">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, magnam!
+          Aliquam, est ipsam aut optio exercitationem magni perferendis
+          voluptatem saepe laborum, ducimus consequuntur dignissimos
+          reprehenderit ipsum dicta sed amet facere.
+        </p>
+        <p className="ListExperienceContent">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, quia
+          cumque commodi officia rem atque. Sint non dolor officia fugiat
+          consequatur perferendis, porro voluptate ducimus vero fugit et,
+          nesciunt dolorem?
+        </p>
+      </div>
     </>
   );
 }

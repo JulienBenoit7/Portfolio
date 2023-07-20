@@ -20,6 +20,12 @@ function Navbar() {
         <Link style={{ textDecoration: "none", color: "white" }} to="/Skills">
           <li className="listPointer">Skills</li>
         </Link>
+        <Link
+          style={{ textDecoration: "none", color: "white" }}
+          to="/AddProjet"
+        >
+          <li className="listPointer">Ajouter projet</li>
+        </Link>
       </ul>
     </nav>
   );

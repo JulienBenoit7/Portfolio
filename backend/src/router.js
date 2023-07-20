@@ -17,6 +17,7 @@ const languageControllers = require("./controllers/languageControllers");
 
 router.get("/projets", projetControllers.browse);
 router.get("/projets/:id", projetControllers.read);
+router.post("/projets", projetControllers.add);
 
 router.get("/languages", languageControllers.browse);
 router.get("/languages/:id", languageControllers.read);
