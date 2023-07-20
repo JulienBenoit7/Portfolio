@@ -10,9 +10,7 @@ function Home() {
         <img className="HomeLogo" src={Logo} alt="logo jb" />
         <h2 className="HomeText">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-          cupiditate iste illo laboriosam. Natus obcaecati cumque ducimus
-          dignissimos asperiores ipsa magni necessitatibus quas. Molestiae nemo
-          odio repellendus error possimus autem!
+          cupiditate iste illo laboriosam.
         </h2>
         <div className="SocialLinks">
           <a href="/#" className="SocialLink">

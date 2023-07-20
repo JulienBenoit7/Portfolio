@@ -6,9 +6,8 @@ function ListExperience() {
   return (
     <>
       <Navbar />
+      <h2 className="ListExperienceTitle">Experiences et formations</h2>
       <div className="ListExperienceContainer">
-        <h2 className="ListExperienceTitle">Experiences et formations</h2>
-
         <p className="ListExperienceContent">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, magnam!
           Aliquam, est ipsam aut optio exercitationem magni perferendis
